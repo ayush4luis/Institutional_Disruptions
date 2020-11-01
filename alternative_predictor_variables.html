@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Institutional Disruptions</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<h3 id="logo"><a href="Home.html">Institutional Disruptions and the Philanthropy of Multinational Firms</a></h3>
+							
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon solid fa-home" href="Description_of_study.html"><span> Description of the Study</span></a></li>
+									<li>
+										<a href="#" class="icon fa-chart-bar"><span>Procedures (Data Collection and Coding) & Statistics</span></a>
+										<ul>
+											<li><a href="Global_database.html">Global Database of Disaster Responses</a></li>
+											<li><a href="Institutional_disruptions.html">Institutional Disruptions</a></li>
+											<li><a href="Mne.html">MNE and Affliate Data</a></li>
+											<!--<li><a href="#">Institutional Disruptions</a></li>
+											<li><a href="#">Global Disaster Aid</a></li>
+											<li><a href="#">Affiliate-specific data</a></li>
+											<li><a href="#">Country data</a></li>
+											<li><a href="#">Full sample</a></li>-->
+												
+										</ul>
+									</li>
+
+									<li>
+										<a href="#" class="icon fa-chart-bar"><span>Robustness and Test of Confounders</span></a>
+										<ul>
+											<li><a href="Partial_mode.html">Partial Model Results</a></li>
+											<li><a href="Percentile_severity.html">Sample at the 75th and 90th Percentile Severity Cutoffs</a></li>
+											<li><a href="Match_sample.html">Matched-based sample</a></li>
+											<li><a href="alternative_predictor_variables.html">Alternative Predictor Variables</a></li>
+											<li><a href="Reputation.html">Is it the Pursuit of Reputation?</a></li>
+											<li><a href="Political.html">Is it the Pursuit of Political Favors?</a></li>
+											<li><a href="Market_standing">Is it the Pursuit of Market Standing?</a></li>
+											<li><a href="Employees.html">Is it the Employees’ Altruism or Reciprocity?</a></li>
+											<li><a href="Media.html">Is it Media Salience?</a></li>
+											<li><a href="Social.html">Is it the Social Pressure Coming from Local Presence?</a></li>
+											<li><a href="Poverty.html">Is it Inequity or Poverty Aversion?</a></li>
+											<li><a href="headquarters.html">Do headquarters units sufficiently explain the size of the effects?</a></li>
+											<li><a href="References.html">References</a></li>
+												
+										</ul>
+									</li>
+
+									<!--<li><a class="icon solid fa-cog" href=" https://gwu.box.com/s/2gvksyhkkovzkw9qnubmioiwunmuop30"><span>Manuscript</span></a></li>-->
+								</ul>
+							</nav>
+
+					</div>
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+
+							 
+								<div id="content" class="col-8 col-12-medium">
+
+										<article class="box post">
+											<header>
+												<h2>Alternative Predictor Variables</h2>
+											</header>
+											<p>
+											In robustness models, we use alternative measures of economic importance based on revenues, total assets, and employees. We do not use them as main explanatory variables as, arguably, it may reduce construct validity. For instance, revenue can overrepresent some industries and some types of affiliates, such as sale subsidiaries and only accounts for the demand side of the market and it does not capture the relevance of the country affiliate as a supplier of inputs for the firm.</p>
+
+											<p>Moreover, Orbis has substantial missing data for these variables. Addressing missing data with listwise deletion or mean substitution would foster the risk of obtaining biased estimates, increasing Type II errors, and underestimating correlations and coefficient weights. To address this, we start by analyzing missingness patterns and find no systematic divergence on the completely observed variables between those with missing data and those with available data. In other words, the hypothesis that data are missing completely at random cannot be rejected. Then, we use two methods to impute data:</p>
+
+											
+											<ol type="1" >
+												<li>For firm-level data, we expand using Chebyshev polynomials because they can arguably approximate most functional forms (Kolsarici and Vakratsas 2015). We opted for a third-order polynomial based on the Bayesian information criterion after considering expansions up to the 20th degree.</li>
+
+												<li>For country-level data, we apply multiple-input bootstrapping algorithm for time-series-cross-sectional data as explained by Blackwell et al. (2017). This form of imputation accounts for smooth time trends, changes across cross-sectional variables, and time and space correlations and it susceptible to integrate scant knowledge to specific cells when available. A review of how this method can produce more accurate imputation particularly for macro level data than traditional procedures can be found in  Honaker and King (2010).</li>
+											
+ 											<span class="image featured"><img src="images/AA17.png" alt="" /></span>
+ 											<span class="image featured"><img src="images/AA18.png" alt="" /></span>
+											
+										</article>
+
+								</div>
+
+							 <!--Sidebar
+								<div id="sidebar" class="col-4 col-12-medium">
+
+									 Excerpts 
+										<section>
+											<ul class="divided">
+												<li>
+
+													 Excerpt 
+														<article class="box excerpt">
+															<header>
+																<span class="date">July 30</span>
+																<h3><a href="#">Just another post</a></h3>
+															</header>
+															<p></p>
+														</article>
+
+												</li>
+												<li>
+
+													 Excerpt 
+														<article class="box excerpt">
+															<header>
+																<span class="date">July 28</span>
+																<h3><a href="#">And another post</a></h3>
+															</header>
+															<p></p>
+														</article>
+
+												</li>
+												<li>
+
+													 Excerpt 
+														<article class="box excerpt">
+															<header>
+																<span class="date">July 24</span>
+																<h3><a href="#">One more post</a></h3>
+															</header>
+															<p></p>
+														</article>
+
+												</li>
+											</ul>
+										</section>
+
+									 Highlights 
+										<section>
+											<ul class="divided">
+												<li>
+
+													 Highlight 
+														<article class="box highlight">
+															<header>
+																<h3><a href="#">Something of note</a></h3>
+															</header>
+															<a href="#" class="image left"><img src="images/pic06.jpg" alt="" /></a>
+															<p></p>
+															<ul class="actions">
+																<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
+															</ul>
+														</article>
+
+												</li>
+												<li>
+
+													 Highlight 
+														<article class="box highlight">
+															<header>
+																<h3><a href="#">Something of less note</a></h3>
+															</header>
+															<a href="#" class="image left"><img src="images/pic07.jpg" alt="" /></a>
+															<p></p>
+															<ul class="actions">
+																<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
+															</ul>
+														</article>
+
+												</li>
+											</ul>
+										</section>
+
+								</div>
+
+						</div>
+					</div>
+				</section> --> 
+
+			
+							
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
