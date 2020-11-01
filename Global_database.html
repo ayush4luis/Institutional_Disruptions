@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Institutional Disruptions</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			ul.a {list-style-type: circle;}
+			ul.b {list-style-type: square;}
+			ol.c {list-style-type: upper-roman;}
+			ol.d {list-style-type: lower-alpha;}
+		</style>
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<h3 id="logo"><a href="Home.html">Institutional Disruptions and the Philanthropy of Multinational Firms</a></h3>
+							
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon solid fa-home" href="Description_of_study.html"><span> Description of the Study</span></a></li>
+									<li>
+										<a href="#" class="icon fa-chart-bar"><span>Procedures (Data Collection and Coding) & Statistics</span></a>
+										<ul>
+											<li><a href="Global_database.html">Global Database of Disaster Responses</a></li>
+											<li><a href="Institutional_disruptions.html">Institutional Disruptions</a></li>
+											<li><a href="Mne.html">MNE and Affliate Data</a></li>
+											<!--<li><a href="#">Institutional Disruptions</a></li>
+											<li><a href="#">Global Disaster Aid</a></li>
+											<li><a href="#">Affiliate-specific data</a></li>
+											<li><a href="#">Country data</a></li>
+											<li><a href="#">Full sample</a></li>-->
+												
+										</ul>
+									</li>
+
+									<li>
+										<a href="#" class="icon fa-chart-bar"><span>Robustness and Test of Confounders</span></a>
+										<ul>
+											<!--<li><a href="#">Matched-base results</a></li>-->
+											<li><a href="Partial_mode.html">Partial Model Results</a></li>
+											<li><a href="Percentile_severity.html">Sample at the 75th and 90th Percentile Severity Cutoffs</a></li>
+											
+											<li><a href="Match_sample.html">Matched-based sample</a></li>
+											<li><a href="alternative_predictor_variables.html">Alternative Predictor Variables</a></li>
+											<li><a href="Reputation.html">Is it the Pursuit of Reputation?</a></li>
+											<li><a href="Political.html">Is it the Pursuit of Political Favors?</a></li>
+											<li><a href="Market_standing">Is it the Pursuit of Market Standing?</a></li>
+											<li><a href="Employees.html">Is it the Employees’ Altruism or Reciprocity?</a></li>
+											<li><a href="Media.html">Is it Media Salience?</a></li>
+											<li><a href="Social.html">Is it the Social Pressure Coming from Local Presence?</a></li>
+											<li><a href="Poverty.html">Is it Inequity or Poverty Aversion?</a></li>
+											<li><a href="headquarters.html">Do headquarters units sufficiently explain the size of the effects?</a></li>
+											<li><a href="References.html">References</a></li>
+												
+										</ul>
+									</li>
+
+									<!--<li><a class="icon solid fa-cog" href=" https://gwu.box.com/s/2gvksyhkkovzkw9qnubmioiwunmuop30"><span>Manuscript</span></a></li>-->
+								</ul>
+							</nav>
+
+					</div>
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+
+							 
+								<div id="content" class="col-8 col-12-medium">
+
+										<article class="box post">
+											<header>
+												<h2>Global Database of Disaster Responses  </h2>
+											</header>
+											
+											<p>We coordinated a collaborative five-year project with researchers in the business school and department of computer and information science of a university in the United States to build, arguably, the largest database on disaster aid at the international level. The dataset covers monetary and in-kind donation from firms, governments, multinational agencies, and non-governmental organizations reported in news media to relief and recovery from all major disasters that affected the world from 1990 to 2019. The coded data of corporate aid comprise 96,858 donations from 40,170 firms from 84-headquarters countries to 4,706 natural disasters that hit 208 countries in the period 2003-2019.
+											 <br>
+											 <b>Collecting Data.</b> We used the following procedure to track disaster donations:
+											 <br>
+											 <ol type="1" >
+											 	<li>
+											 		We obtained data on epidemic outbreaks, natural disasters, terrorist attacks and technological accidents from a variety of sources. First, we used the International Disaster Database (EM-DAT) from the Centre for Research on the Epidemiology of Disasters that register disasters based on the following criteria: 10 or more people killed, 100 or more people affected, a declaration of a state of emergency, or a call for international aid. Further information at http://www.emdat.be/. Second, to overcome the data inaccuracies and missing data in EM-DAT, we obtained data from the reinsurance company Swiss Re and the Financial Tracking System (FTS) from the United Nations Office for Coordination of Humanitarian Affairs (UNOCHA).
+											 	</li>
+											 	<li>
+											 		We automated code in Python to identify disaster donations in news reports using Factiva, Google, and Lexis Nexis. The search range was within a year from the official start date. A story is relevant for our database if the headline or body is in the results of a Boolean search that has the combination of the affected country, the type of the disaster, and in some cases, the name of the disaster. Specifically, the Boolean combinations are as follows: <br>
+											 		Specifically, the Boolean combinations are as follows: 
+											 		<ol class="d">
+											 			<li>The affected country. </li>
+											 			<li>Event. Derivations of:</li>
+											 			<ol class="c">
+											 				<li>Epidemic: “pandemic” OR “epidemic”</li>
+											 				<li>Mass movement: “landslide” OR “avalanche” OR “rockfall” OR “subsidence” </li>
+											 				<li>Earthquake: “seismic” OR “quake” OR “earthquake” OR “tsunami” 
+											 				</li>
+											 				<li>Flood: “flood” </li>
+											 				<li>Storm: “storm” OR “typhoon” OR “cyclone” OR “hurricane” OR “tornado” </li>
+											 				<li>Volcano: “volcano” OR “volcanic” OR “eruption”</li>
+											 				<li>Technological accident: “accident” OR “explosion” </li>
+											 				<li>Terrorism: “terrorist” OR “attack” </li>
+											 			</ol>
+											 			<li>Action. Derivations of: “donation” OR “donate” OR “donated” OR “donating” OR “pledge” OR “pledged” OR “pledging” OR “give” OR “gave” OR “given” OR “giving.” </li>
+											 			<li>Disaster name, when available. <br>
+											 				<p>An example of a Boolean combination is: [03/11/2011-03/11/2012]; (“Japan” or “Japanese” or “Japan’s” or “Japans” ) and (“tsunami” or “earthquake” or “quake” or “disaster”) and (“donation” orR “donate” or “pledge” or “pledging” or “give” or “gave” or “given” or “giving”). </p></li>
+											 		</ol>
+											 	</li>
+											 
+											 	<li>	
+
+											 		<p>To make over 2,310,000 electronic reports computationally tractable, we apply differential language analysis using JavaScript Object Notation (i.e., JSON and AJAX) to parse the data. We code the following fields by article:</p>
+
+											 		<ol class="d">
+											 			<li>Actor: Entity making the donation. </li>
+											 			<li>Actual donation. </li>
+											 			<ol class="c">
+											 			<li>In case of in-kind donations, the characteristics of the product or service were recorded (e.g., 1,000 bottles of water; a team of nine technicians) and monetized using either current prices applicable in the affected country (e.g., the average price of one litter of bottled water, the daily man-power wage for a specific professional or technician) or an equivalent pecuniary value based on other firms’ reporting of their donation to the same disaster. </li>
+											 			<li>In case of donations reported in a currency different than the dollar, they were converted using the currency exchange rate of the day of the donation.
+											 			</li>
+											 			</ol>
+
+
+											 			<li>Actual donation. </li>
+											 			<ol class="c">
+											 			<li>In case of in-kind donations, the characteristics of the product or service were recorded (e.g., 1,000 bottles of water; a team of nine technicians) and monetized using either current prices applicable in the affected country (e.g., the average price of one litter of bottled water, the daily man-power wage for a specific professional or technician) or an equivalent pecuniary value based on other firms’ reporting of their donation to the same disaster. </li>
+											 			<li>In case of donations reported in a currency different than the dollar, they were converted using the currency exchange rate of the day of the donation.
+											 			</li>
+											 			</ol>
+
+											 				<li>Donations Toward Market Factors. </li>
+											 			<ol class="c">
+											 			<li> The donation reports were coded for whether the target was associated with factors that underpin the functioning of the market. For instance, if the donation report states that the company donated for “power”, “generators”, “communication”, “airport”, “transport”, “roadways”, “emergency housing”, “rebuilding”, “restoring”, “reconstruction”, “schools”, etc., the donation would receive a one, and a zero otherwise.</li>
+											 			</ol>
+
+
+											 		
+											 	
+											 	<li>Employee-driven donation. When the news article mentioned that the donation was an initiative of the employees (and, for example, the company is matching whatever the employees collected), a binary variable took value 1. </li>
+											 	<li>Direct Impact: When the news article mentioned that the disaster affected the organization physically in any way (e.g., corporate assets such as buildings were damaged) and/or employees were injured, a binary variable took value 1. </li>
+											 	<li>To increase the relevance of the output (for example, some news reports were a series of articles with no relevance to the study but whose combination would make the report to be included in the outcome), the search was qualified with the following filtering process:
+											 		<ol class="c">
+											 			<li>The name of the country had to be within 50 words of the type of the disaster or the word “disaster.” </li>
+											 			<li>Entities and the act of donating were parsed:</li>
+											 			<ol>
+											 				<li>The entities per article were extracted and grouped in three categories: organization (e.g., Tepco), location (e.g., Canada), and individual (e.g., Barack Obama). </li>
+											 			</ol>
+											 			<li>The verb identifying the act of donating had to be within 30 words of an entity </li>
+											 		</ol>
+											 	</li>
+											 <ol>
+
+											 <p><b>Assessing the Quality of Data.</b> We used the followed procedure to check the accuracy of our collection:
+
+											 <ol>
+											 	<li>We hired independent researchers to conduct two different procedures to verify the quality of the dataset using third-party sources such as company sustainability reports. We randomly selected five percent of the events (156) for the period 2003-2013 and researchers searched reports using Google, Lexis Nexis, and Factiva. From this procedure, 5.1 percent of the selected events (8) had data inaccuracies. About 60 percent of these errors were associated with monetizing the in-kind value of donations, with less than 8% of the donations were incorrectly marked. The rest of sample of discrepancies were due to missing data on the nature of donor’s business.</li>
+
+											 	<li>We run another random draw excluding previously evaluated cases and the researchers repeated the analysis. No other discrepancies were found.</li>
+
+											 	<li>We compared our data with third-party sources: </li>
+
+											 		<ol class="d">
+											 			<li>We had access to exclusive information of donation for the 2010 tsunami and earthquake in Chile via the Chilean government. By comparing our database with the list of donors given by the Chilean government, we found that our dataset comprised 68 percent of the official source. Our tracking did not include donating frequency of small- and medium-sized Chilean, non-multinational enterprises. In terms of magnitude, our dataset accounted for 92 percent of the total corporate aid for the event. </li>
+
+											 			<li>We worked with staff members of the United Nations Office for Coordination of Humanitarian Affairs (UNOCHA) to compare our database with the Financial Tracking System (FTS). This is a global database that records self-reported international humanitarian aid for different humanitarian crises.  The FTS covered about seven percent of our firm donations and 65 percent of our government and NGO donations. </li>
+
+											 			<li>The U.S. Chamber of Commerce Foundation maintains Disaster Corporate Aid Trackers that are self-reported records for company response to disasters that focus on U.S. firms. Their data start in 2010 for selected disasters, particularly in the U.S., and account for 11 percent of our database. 
+											 			</li>
+											 		</ol>
+											 	</li>
+											 	<li>We hired research assistants to run another set of random checks in 2020 for all the data in the database and did not find any discrepancy.</li>
+											 </ol>
+
+											<hr>
+											[1] There were spelling mistakes in some articles.<br>
+
+											[2] For information about the method of collection of FTS data and their verification, visit the following site: http://fts.unocha.org/pageloader.aspx?page=AboutFTS-Data.<br>
+
+											[3] These data are available at https://www.uschamberfoundation.org/corporate-aid-trackers.		<br>
+											 						
+ 											
+											
+										</article>
+
+								</div>
+
+							 
+			
+							
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
